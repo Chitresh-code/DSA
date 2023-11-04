@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: configure
-      run: ./DSA
+      run: ./Codesheet
     - name: make
       run: make
     - name: make check
