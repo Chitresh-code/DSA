@@ -19,7 +19,7 @@
           "<",
           "input.txt",
           ">",
-          "output.txt",
+          "output.txt", 
           "&&",
           "del",
           "jspwTest.exe",
