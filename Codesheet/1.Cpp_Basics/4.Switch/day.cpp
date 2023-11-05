@@ -2,7 +2,7 @@
 Take the day number as input and print the corresponding day of the week.
 for 1 print Monday,
 for 2 print Tuesday and so on.
-*/
+*/ 
 
 #include<bits/stdc++.h>
 using namespace std;
