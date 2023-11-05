@@ -11,7 +11,7 @@ int main() {
     cout << str1.length() << endl; // Prints 12
 
     // String Size
-    cout << str2.size() << endl; // Prints 14
+    cout << str2.size() << endl; // Prints 13
 
     // Difference between length and size
     // Length and size are same for strings
@@ -19,7 +19,7 @@ int main() {
 
     // String Concatenation
     cout << str1 + " " + str2 << endl; // Prints Hello World! Good Morning!
-    
+
     // String Input
     string str4, str5;
     cin >> str4;
