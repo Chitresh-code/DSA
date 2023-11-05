@@ -2,7 +2,7 @@
 /*
 Contents:
     1. Basic Structure of a main function
-    2. Printing Output to the console
+    2. Printing Output to the console 
     3. Printing Output to the console using namespace
     4. Taking Input from the console
 
