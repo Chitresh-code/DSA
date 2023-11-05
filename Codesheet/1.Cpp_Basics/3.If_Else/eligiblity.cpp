@@ -7,7 +7,7 @@ Take the age from the user and then decide:
 3. If age >= 55 and age <= 57,
     print-> eligible for job, but retirement soon
 4. If age > 57,
-    print-> not eligible for job, retired
+    print-> not eligible for job, retired 
 */
 
 #include<bits/stdc++.h>
