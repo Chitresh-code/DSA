@@ -1,7 +1,7 @@
 # Datatypes in C++
 
 The most important datatypes in C++ are:
-|  **Datatype**  |     **Bytes**     |      **Minimum Value**      |       **Maximum Value**       |
+|  **Datatype**  |     **Bytes**     |      **Minimum Value**      |       **Maximum Value**       | 
 |----------------|-------------------|-----------------------------|-------------------------------|
 | int            | 4                 | -2,147,483,648              |   2,147,483,647               |
 | Unsigned int   | 4                 |  0                          |   4,294,967,295               |
