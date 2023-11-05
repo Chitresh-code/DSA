@@ -5,7 +5,7 @@
 - Printing Output to the console
 - Taking Input from the console
 
-Copy the code and paste to run it on your console
+Copy the code and paste to run it on your console 
 
 ### 1. Basic Structure of a main function
 
