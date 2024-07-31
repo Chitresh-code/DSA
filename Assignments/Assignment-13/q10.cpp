@@ -6,20 +6,20 @@ int main() {
     char str[30];
     gets(str);
 
-    int len = strlen(str);
-    int count[len+1];
-    for(int i = 0;i < len;i++) {
-        for(int j = i+1;j < len;j++) {
-            count[i] = 1;
-            if (str[i] == str[j])
-                count[i]++;
+    int count[256] = { 0 };
+
+    int length = strlen(str);
+    for (int i = 0; i < length; i++)
+        count[(int)str[i]]++;
+
+    char maxChar;
+    int maxCount = 0;
+    for (int i = 0; i < length; i++) {
+        if (count[(int)str[i]] > maxCount) {
+            maxCount = count[(int)str[i]];
+            maxChar = str[i];
         }
     }
-    for(int i = 0;i < len;i++) {
-        printf("%c ", str[i]);
-    }
-    printf("\n");
-    for(int i = 0;i < len;i++) {
-        printf("%d ", count[i]);
-    }
+
+    printf("The maximum occuring character is: %c", maxChar);
 }
