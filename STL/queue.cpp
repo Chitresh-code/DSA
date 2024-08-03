@@ -17,5 +17,7 @@ int main() {
     q.pop();
     cout << q.front() << endl;
 
+    // size, empty and swap same as stack
+
     return 0;
 }
