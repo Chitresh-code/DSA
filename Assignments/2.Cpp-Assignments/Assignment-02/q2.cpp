@@ -9,16 +9,20 @@ class Area {
         float area;
     
     public:
-        setDim() {
-            cin >> len;
-            cin >> br;
-        }
-
-        getArea() {
-            area = len * br;
-            cout << "Area: " << area;
-        }
+        void setDim();
+        void getArea();
+        
 };
+
+void Area :: setDim() {
+    cin >> len;
+    cin >> br;    
+}
+
+void Area :: getArea() {
+    area = len * br;
+    cout << "Area: " << area;
+}
 
 int main() {
     Area rectangle;

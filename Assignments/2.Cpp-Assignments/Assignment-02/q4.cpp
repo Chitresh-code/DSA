@@ -8,15 +8,18 @@ class Area {
         int area;
     
     public:
-        setRadius() {
-            cin >> radius;
-        }
-
-        getArea() {
-            area = 3.14 * radius * radius;
-            cout << "Area: " << area;
-        }
+        setRadius();
+        getArea();
 };
+
+void Area :: setRadius() {
+    cin >> radius;
+    }
+
+void Area :: getArea() {
+    area = 3.14 * radius * radius;
+    cout << "Area: " << area;
+}
 
 int main() {
     Area circle;

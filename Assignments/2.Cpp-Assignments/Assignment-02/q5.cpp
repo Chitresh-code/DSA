@@ -19,14 +19,31 @@ class Student {
         }
 
         showDetails() {
-            cout << "Student Id: " << stdid <<endl;
-            cout << "Student Name: " << name <<endl;
-            cout << "Semester: " << sem <<endl;
-            cout << "Branch: " << branch <<endl;
+            cout << "Student Id: " << stdid << endl;
+            cout << "Student Name: " << name << endl;
+            cout << "Semester: " << sem << endl;
+            cout << "Branch: " << branch << endl;
         }
 };
 
-int main() {
+void Student :: getDetails() {
+    cin >> stdid;
+    cin.ignore();
+    getline(cin, name);
+    cin >> sem;
+    cin.ignore();
+    getline(cin, branch);
+}
+
+void Student :: showDetails() {
+    cout << "Student Id: " << stdid << endl;
+    cout << "Student Name: " << name << endl;
+    cout << "Semester: " << sem << endl;
+    cout << "Branch: " << branch << endl;
+}
+
+int main()
+{
     Student std1;
     std1.getDetails();
     std1.showDetails();
