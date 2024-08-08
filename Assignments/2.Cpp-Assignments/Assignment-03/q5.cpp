@@ -1,5 +1,5 @@
-// Create a class “Mobile” with attributes: brand, price, color, width, height.
-// Use constructor to set default values of these attributes.
+// Create a class “Mobile” with attributes: brand, price, color, width, height. 
+// Use constructor to set default values of these attributes. 
 // Write function to display details of all attributes
 #include<bits/stdc++.h>
 using namespace std;
@@ -29,17 +29,7 @@ void Mobile :: display() {
 }
 
 int main() {
-    float price, width, height;
-    string brand, color;
+    vector<Mobile> mob(5);
 
-    getline(cin, brand);
-    
-    cin >> price;
-    cin.ignore();
-    getline(cin, color);
-    cin >> width >> height;
-
-    Mobile mob1(price, width, height, brand, color);
-    mob1.display();
 
 }
