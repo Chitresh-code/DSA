@@ -28,7 +28,7 @@ HEADER = re.compile(
 
 
 def usage() -> str:
-    return "Usage: ./run [py|cpp|run.py|run.cpp]"
+    return "Usage: ./run [py|cpp|run.py|run.cpp|path-to-active-file]"
 
 
 def choose_source(argument: str | None) -> Path:
@@ -42,9 +42,16 @@ def choose_source(argument: str | None) -> Path:
             "c++": "cpp",
             "run.cpp": "cpp",
         }
-        if key not in aliases:
-            raise ValueError(usage())
-        return SOURCES[aliases[key]]
+        if key in aliases:
+            return SOURCES[aliases[key]]
+
+        # VS Code passes the active editor path. The extension tells us which
+        # scratch file to run while keeping the same command-line workflow.
+        suffix = Path(argument).suffix.lower()
+        suffix_aliases = {".py": "py", ".cpp": "cpp", ".cc": "cpp", ".cxx": "cpp"}
+        if suffix in suffix_aliases:
+            return SOURCES[suffix_aliases[suffix]]
+        raise ValueError(usage())
 
     return max(SOURCES.values(), key=lambda path: path.stat().st_mtime_ns)
 

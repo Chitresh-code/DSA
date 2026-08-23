@@ -1,0 +1,11 @@
+{
+  "code-runner.executorMap": {
+    "cpp": "cd \"$workspaceRoot\" && ./run cpp",
+    "python": "cd \"$workspaceRoot\" && ./run py"
+  },
+  "code-runner.ignoreSelection": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.showRunIconInEditorTitleMenu": true
+}
