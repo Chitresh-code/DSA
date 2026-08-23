@@ -15,7 +15,9 @@ This repository goes one step further by reducing the amount of setup and manual
 - An organized history of every problem you solve.
 - One command to commit and push your solutions with consistent messages.
 
+## Preview
 
+![C++ Two Sum solution running with file-based input and output in Visual Studio Code](assets/dsa-workflow.png)
 
 ## How it works
 
